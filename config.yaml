@@ -1,0 +1,83 @@
+# ========================================
+# Data Analytics Training Project Config
+# ========================================
+
+project:
+  name: "Data Analytics Training"
+  version: "1.0.0"
+  description: "Навчальний проєкт для Junior Data Analyst"
+
+student:
+  id: "student_001"        # Змінюється для кожного студента
+  difficulty: "junior"     # junior | middle
+  seed: 42                 # Унікальний seed для генерації даних
+
+data:
+  sizes:
+    customers: 30000
+    orders: 250000
+    products: 5000
+    reviews: 100000
+    payments: 250000
+    sessions: 300000
+    website_logs: 1000000
+
+  dirty_data:
+    enabled: true
+    null_probability: 0.05       # 5% пропусків
+    duplicate_probability: 0.03  # 3% дублікатів
+    typo_probability: 0.02       # 2% помилок
+    date_error_probability: 0.03 # 3% проблем з датами
+    outlier_probability: 0.01    # 1% аномалій
+
+  formats:
+    csv: true
+    json: true
+    excel: true
+    db: true
+
+database:
+  path: "data/database/analytics.db"
+  tables:
+    - customers
+    - orders
+    - products
+    - payments
+    - reviews
+    - returns
+    - categories
+    - warehouses
+    - suppliers
+    - marketing_campaigns
+    - sessions
+    - employees
+
+paths:
+  raw_data: "data/raw"
+  cleaned_data: "data/cleaned"
+  database: "data/database"
+  logs: "data/logs"
+  scripts: "scripts"
+  exercises: "exercises"
+  solutions: "solutions"
+  dashboards: "dashboards"
+  tests: "tests"
+  reports: "reports"
+
+grading:
+  max_score: 100
+  weights:
+    cleaning: 25
+    pandas: 25
+    sql: 20
+    visualization: 20
+    business_thinking: 10
+
+dashboards:
+  port: 8050
+  debug: true
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "data/logs/project.log"
