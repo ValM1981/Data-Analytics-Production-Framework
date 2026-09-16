@@ -68,6 +68,6 @@ python main.py dashboard sales
 
 ## 👩‍💻 Let's Connect!
 I bridge the gap between rigorous mathematical logic (Ph.D. background) and production-grade Python engineering. If you are a recruiter, team lead, or tech explorer looking for a highly capable Junior Data Analyst, let’s talk:
-*   **LinkedIn:** [linkedin.com/in/valentyna-matskevych](https://www.linkedin.com/in/valentyna-matskevych)
+*   **LinkedIn:**[linkedin.com/in/valentyna-matskevych-07389587](https://www.linkedin.com/in/valentyna-matskevych-07389587)
 *   **Email:** matskevych.vt@gmail.com
 
